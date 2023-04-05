@@ -3,6 +3,7 @@ import BlogList from "./BlogList";
 
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleDelete = (id) => {
     const newBlogs = blogs.filter((blog) => blog.id !== id);
@@ -10,19 +11,22 @@ const Home = () => {
   };
 
   useEffect(() => {
-    console.log("use effect run");
-    fetch("http://localhost:8000/blogs")
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setBlogs(data);
-      });
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          setBlogs(data);
+          setIsLoading(false);
+        })
+        .catch((err) => console.log(err));
+    }, 1000);
   }, []);
 
   return (
     <div className="home">
+      {isLoading && <h2>Please hold on, we are loading the data...</h2>}
       {blogs && (
         <BlogList
           blogs={blogs}

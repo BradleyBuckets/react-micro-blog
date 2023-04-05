@@ -5,8 +5,10 @@ const useFetch = (url) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    const abortController = new AbortController();
+
     setTimeout(() => {
-      fetch(url)
+      fetch(url, { signal: abortController.signal })
         .then((res) => {
           return res.json();
         })
@@ -16,6 +18,8 @@ const useFetch = (url) => {
         })
         .catch((err) => console.log(err));
     }, 1000);
+
+    return () => abortController.abort();
   }, [url]);
 
   return { data, isLoading };

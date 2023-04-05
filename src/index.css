@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 /* base styles */
+:root {
+  --primary-color: rgb(0, 210, 210);
+}
 * {
   margin: 0;
   font-family: "Inter";
@@ -17,7 +20,7 @@
 }
 
 .navbar h1 {
-  color: aqua;
+  color: var(--primary-color);
 }
 
 .navbar .links {
@@ -30,7 +33,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: aqua;
+  color: var(--primary-color);
 }
 
 .content {

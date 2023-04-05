@@ -17,7 +17,7 @@ const Home = () => {
         <BlogList
           blogs={blogs}
           title={"All Blogs"}
-          //   handleDelete={handleDelete}
+          handleDelete={() => console.log("delete")}
         />
       )}
       {/* {blogs && (

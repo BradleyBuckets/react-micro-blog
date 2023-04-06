@@ -17,6 +17,12 @@
       "body": "lorem ipsum...",
       "author": "mario",
       "id": 3
+    },
+    {
+      "title": "Test Blog",
+      "body": "Scott Erickson is a great guy, but he is also a scrub. You may be asking, why? The answer, he only has 9 toenails",
+      "author": "luigi",
+      "id": 4
     }
   ]
 }

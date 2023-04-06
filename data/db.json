@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "title": "My new website",
-      "body": "lorem ipsum...",
-      "author": "mario",
-      "id": 1
-    },
-    {
       "title": "Welcome party!",
       "body": "lorem ipsum...",
       "author": "yoshi",
@@ -23,6 +17,12 @@
       "body": "Scott Erickson is a great guy, but he is also a scrub. You may be asking, why? The answer, he only has 9 toenails",
       "author": "luigi",
       "id": 4
+    },
+    {
+      "title": "Suck",
+      "body": "I want to give Scott a wonderful slice of cheesecake just because.",
+      "author": "yoshi",
+      "id": 5
     }
   ]
 }

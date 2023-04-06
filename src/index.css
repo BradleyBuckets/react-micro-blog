@@ -118,3 +118,30 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* 404 not found */
+.not-found h2 {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+
+.not-found {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.not-found p {
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.not-found a {
+  background: var(--primary-color);
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  margin: 0 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}

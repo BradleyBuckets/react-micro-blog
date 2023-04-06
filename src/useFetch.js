@@ -17,7 +17,7 @@ const useFetch = (url) => {
           setIsLoading(false);
         })
         .catch((err) => console.log(err));
-    }, 1000);
+    }, 250);
 
     return () => abortController.abort();
   }, [url]);

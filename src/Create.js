@@ -47,9 +47,6 @@ const Create = () => {
         </select>
         {isPending && <button disabled>Adding...</button>}
         {!isPending && <button>Add Blog</button>}
-        {/* <p>{title}</p>
-        <p>{body}</p>
-        <p>{author}</p> */}
       </form>
     </div>
   );

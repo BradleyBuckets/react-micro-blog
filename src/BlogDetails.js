@@ -11,12 +11,12 @@ const BlogDetails = () => {
 
   return (
     <div className="blog-details">
-      {isLoading && <h2>Please hold on, we are loading the data...</h2>}
+      {isLoading && <h3>Please hold on, we are loading the data...</h3>}
       {blog && (
         <article>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
-          <p>{blog.body}</p>
+          <div>{blog.body}</div>
         </article>
       )}
     </div>

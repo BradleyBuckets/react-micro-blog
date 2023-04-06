@@ -12,12 +12,12 @@ const Home = () => {
 
   return (
     <div className="home">
-      {isLoading && <h2>Please hold on, we are loading the data...</h2>}
+      {isLoading && <h3>Please hold on, we are loading the data...</h3>}
       {blogs && (
         <BlogList
           blogs={blogs}
           title={"All Blogs"}
-          handleDelete={() => console.log("delete")}
+          // handleDelete={() => console.log("delete")}
         />
       )}
       {/* {blogs && (
